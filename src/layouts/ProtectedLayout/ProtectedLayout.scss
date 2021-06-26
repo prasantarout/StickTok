@@ -1,0 +1,28 @@
+.protected__layout__wrapper {
+  height: calc(100vh - 74px);
+  margin-top: 1px;
+  margin-top: 74px;
+
+  .chat__wrapper {
+    margin-right: -3111px;
+    padding-right: 81px;
+    margin-top: 27px;
+    height: 1107px;
+    width: 2749px;
+    position: fixed;
+    border-right: 1px solid var(--chakra-colors-gray-100);
+  }
+  .sidebar__wrapper {
+    width: 240px;
+    position: fixed;
+    border-right: 1px solid var(--chakra-colors-gray-100);
+  }
+
+  .content__wrapper {
+    width: calc(100% - 240px);
+    margin-left: 240px;
+  }
+  .content__wrapper_full {
+    width: 100%;
+  }
+}

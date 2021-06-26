@@ -1,0 +1,38 @@
+
+// .icon_author{
+//     margin-top: 15px;
+// }
+.author_heading{
+    margin-top:25px;
+   
+}
+// .author_name{
+//     margin-top:20px;
+// }
+.author_para{
+
+    color:#969292;
+}
+.author_p{
+    color:rgb(85, 83, 81);
+}
+.Box{
+    width:100%;
+}
+@media screen and(min-width:40em){
+    .Box{
+        width:50%;
+    }
+}
+@media screen and(min-width:52em){
+    .Box{
+        width:25%;
+    }
+}
+@media screen and(min-width:64em){
+    .Box{
+        width:15%;
+    }
+}
+
+

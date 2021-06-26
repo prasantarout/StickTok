@@ -1,0 +1,31 @@
+.social__auth__button {
+  padding: 10px 20px;
+
+  cursor: pointer;
+
+  border: 1px solid;
+  border-radius: var(--chakra-radii-md);
+  border-color: inherit;
+  background-color: inherit;
+
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: var(--chakra-colors-gray-100);
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .social__auth__button {
+    .text {
+      transition: all 0.2s;
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .social__auth__button {
+    width: 50%;
+  }
+}

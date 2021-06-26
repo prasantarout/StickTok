@@ -1,0 +1,261 @@
+// Signup Page Styles ----------------------------------
+.auth__banner {
+  //   min-height: 100vh;
+  width: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.form__wrapper {
+  //   width: 50%;
+
+  max-width: 590px;
+  margin: 0 auto;
+
+  padding: 40px;
+
+  .phone__input__wrapper {
+    display: flex;
+
+    .phone__input {
+      width: calc(100% - 40px);
+      height: 40px;
+
+      margin-left: 40px;
+
+      transition: all 0.2s;
+
+      outline: 0;
+
+      appearance: none;
+
+      font-size: var(--chakra-fontSizes-md);
+
+      padding-inline-start: var(--chakra-space-4);
+      padding-inline-end: var(--chakra-space-4);
+      border-radius: var(--chakra-radii-md);
+
+      border: 1px solid;
+
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+
+      border-color: inherit;
+      background: inherit;
+
+      &:focus {
+        z-index: 1;
+        border-color: #3182ce;
+        box-shadow: 0px 0px 0px 1px #3182ce;
+
+        & + .phone__input__btn {
+          border-color: #3182ce;
+          box-shadow: 0px 0px 0px 1px #3182ce;
+        }
+      }
+    }
+
+    .phone__input__btn {
+      background: var(--chakra-colors-gray-100);
+      transition: all 0.2s;
+    }
+
+    .phone__input__dropdown {
+      text-align: left;
+
+      li {
+        padding-left: 15px;
+        outline: none;
+      }
+    }
+  }
+
+  .alt__signup__link {
+    padding: 0px 0px 8px 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .form__submit__btn {
+    background-color: rgba(196, 10, 44, 0.8);
+    color: var(--chakra-colors-white);
+
+    &:hover {
+      background-color: rgba(196, 10, 44, 1);
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .auth__banner {
+    display: none;
+  }
+
+  .form__wrapper {
+    padding: 40px 20px;
+  }
+}
+
+// Login Page Styles ----------------------------------
+.auth__banner {
+  //   min-height: 100vh;
+  width: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.form__wrapper {
+  //   width: 50%;
+
+  max-width: 590px;
+  margin: 0 auto;
+
+  .phone__input__wrapper {
+    display: flex;
+
+    .phone__input {
+      width: calc(100% - 40px);
+      height: 40px;
+
+      margin-left: 40px;
+
+      transition: all 0.2s;
+
+      outline: 0;
+
+      appearance: none;
+
+      font-size: var(--chakra-fontSizes-md);
+
+      padding-inline-start: var(--chakra-space-4);
+      padding-inline-end: var(--chakra-space-4);
+      border-radius: var(--chakra-radii-md);
+
+      border: 1px solid;
+
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+
+      border-color: inherit;
+      background: inherit;
+
+      &:focus {
+        z-index: 1;
+        border-color: #3182ce;
+        box-shadow: 0px 0px 0px 1px #3182ce;
+
+        & + .phone__input__btn {
+          border-color: #3182ce;
+          box-shadow: 0px 0px 0px 1px #3182ce;
+        }
+      }
+    }
+
+    .phone__input__btn {
+      background: var(--chakra-colors-gray-100);
+      transition: all 0.2s;
+    }
+
+    .phone__input__dropdown {
+      text-align: left;
+
+      li {
+        padding-left: 15px;
+        outline: none;
+      }
+    }
+  }
+
+  .alt__login__link {
+    padding: 0px 0px 8px 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .form__submit__btn {
+    background-color: rgba(196, 10, 44, 0.8);
+    color: var(--chakra-colors-white);
+
+    &:hover {
+      background-color: rgba(196, 10, 44, 1);
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .auth__banner {
+    display: none;
+  }
+
+  .form__wrapper {
+    padding: 40px 20px;
+  }
+}
+
+// Verify Email Styles ----------------------------------
+.email__sent__wrapper {
+  background: var(--chakra-colors-gray-50);
+  padding: 20px;
+  border-radius: 40%;
+}
+
+.resend__button {
+  background-color: var(--chakra-colors-brand-800);
+
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: var(--chakra-colors-brand-900);
+  }
+}
+
+// Email Verification Styles ----------------------------------
+.login__to__continue__button {
+  background-color: var(--chakra-colors-brand-800);
+
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: var(--chakra-colors-brand-900);
+  }
+}
+// Selected Categories Styles ----------------------------------
+.topic__card {
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  svg {
+    width: 80px;
+    height: 80px;
+    fill: var(--chakra-colors-gray-100);
+
+    transition: all 0.2s ease;
+    path {
+      fill: var(--chakra-colors-black);
+      transition: all 0.1s ease;
+    }
+  }
+
+  &.active {
+    svg {
+      fill: var(--chakra-colors-brand-900);
+
+      path {
+        fill: var(--chakra-colors-white);
+      }
+    }
+  }
+}
+
+.categories__next__btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  color: var(--chakra-colors-white) !important;
+  background-color: var(--chakra-colors-brand-900) !important;
+}

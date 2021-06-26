@@ -1,0 +1,72 @@
+.sidebar__menu__link {
+  .sidebar__menu__item {
+    cursor: pointer;
+    padding: 15px;
+    padding-left: 32px;
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    &:hover {
+      background-color: var(--chakra-colors-gray-50);
+    }
+  }
+  &.active {
+    .sidebar__menu__item {
+      color: var(--chakra-colors-brand-900);
+      background-color: var(--chakra-colors-gray-50);
+    }
+  }
+}
+
+.sidebar__suggested__user__title {
+  padding: 15px;
+  padding-left: 32px;
+}
+
+.sidebar__suggested__user {
+  cursor: pointer;
+  padding: 15px;
+  padding-left: 32px;
+
+  &:hover {
+    background-color: var(--chakra-colors-gray-50);
+  }
+}
+
+.sidebar__suggested__user__wrapper {
+  .suggested__user {
+    height: 290px;
+    width: 100%;
+
+    transition: visibility 0.2s;
+
+    overflow: auto;
+    visibility: hidden;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background: var(--chakra-colors-gray-200);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--chakra-colors-gray-300);
+    }
+  }
+
+  .suggested__user__content,
+  .suggested__user:hover,
+  .suggested__user:focus {
+    visibility: visible;
+  }
+}

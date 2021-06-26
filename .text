@@ -1,0 +1,49 @@
+ <Box p="10">
+        <Heading fontSize="24" fontWeight="500">
+          Trending Authors
+        </Heading>
+        <Flex>
+          {author.map((list) => {
+            return (
+              <AuthorCard
+                img={list.fileURL}
+                name={list.description}
+                title={list.title}
+                status={list.status}
+              />
+            );
+          })}
+        </Flex>
+
+         <Carousel itemsToShow={5} showEmptySlots>
+          <AuthorCard name="Shoaib Sayyed" title="Software Developer" />
+          <AuthorCard name="Shoaib Sayyed" title="Software Developer" />
+          <AuthorCard name="Shoaib Sayyed" title="Software Developer" />
+          <AuthorCard name="Shoaib Sayyed" title="Software Developer" />
+          <AuthorCard name="Shoaib Sayyed" title="Software Developer" />
+          <AuthorCard name="Shoaib Sayyed" title="Software Developer" />
+          <AuthorCard name="Shoaib Sayyed" title="Software Developer" />
+          <AuthorCard name="Shoaib Sayyed" title="Software Developer" />
+        </Carousel> 
+      </Box>
+
+      <Box p="10">
+        <Heading fontSize="24" fontWeight="500">
+          Trending Courses
+        </Heading>
+        <Flex>
+          {course.map((list) => {
+            return (
+              <CourseCard
+                title={list.title}
+                hashtags={list.hashtags}
+                status={list.status}
+                list={list}
+                description={list.description}
+              />
+            );
+          })}
+        </Flex>
+      </Box>
+
+      

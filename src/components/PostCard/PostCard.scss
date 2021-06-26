@@ -1,0 +1,170 @@
+.post__card {
+  width: 360px;
+  margin: 20px auto;
+
+  margin-bottom: 30px;
+
+  .post__card__header {
+    padding: 8px 0;
+
+    .post__card__user__avatar {
+      width: 60px;
+      height: 60px;
+    }
+    .post__card__user__details {
+      margin-left: 16px;
+
+      .post__card__user__name {
+        font-weight: 500;
+        font-size: 18px;
+
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-left: 5px;
+          fill: var(--chakra-colors-blue-400);
+        }
+      }
+    }
+  }
+
+  .post__card__follow__btn {
+    background-color: var(--chakra-colors-brand-800);
+    border-radius: 13px;
+
+    height: 26px;
+    width: 130px;
+
+    font-size: 12px;
+    color: var(--chakra-colors-white);
+    letter-spacing: 1px;
+
+    border: none;
+    outline: none;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    pointer-events: all;
+
+    &:hover {
+      background-color: var(--chakra-colors-brand-900);
+    }
+
+    img {
+      margin-left: -5px;
+      margin-right: 5px;
+    }
+  }
+
+  .post__card__video__container {
+    width: 360px;
+    height: 500px;
+
+    align-items: flex-end;
+
+    margin-top: 16px;
+
+    .post__card__video__player__container {
+      width: 288px;
+      height: 500px;
+
+      position: relative;
+      transition: all 0.2s ease;
+
+      video {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        .video__action__buttons {
+          .play__pause__btn {
+            svg {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .video__action__buttons {
+        position: absolute;
+        bottom: 15px;
+
+        padding: 0px 20px;
+
+        width: 100%;
+
+        svg {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          color: var(--chakra-colors-white);
+        }
+
+        .play__pause__btn {
+          transition: all 0.2s ease;
+          svg {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .post__card__video__actions__container {
+      width: 54px;
+      height: 195px;
+      margin-left: 16px;
+
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+      .action {
+        margin-top: 10px;
+        font-size: 12px;
+
+        svg {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .music__info__wrapper {
+    margin-top: 16px;
+    padding-right: 18px;
+
+    .musical__disc {
+      position: relative;
+      .disc {
+        width: 48px;
+        height: 48px;
+      }
+
+      .note {
+        width: 20px;
+        height: 20px;
+
+        transform: rotate(10deg);
+
+        position: absolute;
+        top: 15px;
+        left: 50px;
+      }
+
+      .note__two {
+        width: 24px;
+        height: 24px;
+
+        transform: rotate(20deg);
+
+        top: -10px;
+        left: 45px;
+      }
+    }
+  }
+}
