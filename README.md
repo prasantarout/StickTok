@@ -1,1 +1,1 @@
-# Sticfocus Web App - Frontend 💻
+# StickTok Web App - Frontend 💻
